@@ -1,22 +1,99 @@
 {
+  "id": "ac9988b5-5796-401b-8854-66a34cea3681",
   "version": "2.0",
   "name": "Feedloop-AI-Automation-Test",
   "url": "https://aixp-dashboard-aks.digitallab.id",
   "tests": [{
+    "id": "ef8557f5-2ae6-49c8-a71d-deede714f67f",
     "name": "Login Login with Invalid OTP",
     "commands": [{
+      "id": "6f6b389d-2624-43de-86d1-ae31269dba3b",
       "comment": "",
       "command": "open",
       "target": "",
       "targets": [],
       "value": ""
     }, {
+      "id": "3c3a5d14-0f81-48d3-b9be-bd932aa55afc",
       "comment": "",
       "command": "setWindowSize",
       "target": "1366x768",
       "targets": [],
       "value": ""
     }, {
+      "id": "a5d49da5-f52a-45af-8c10-55cf8920d4aa",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "919b39cc-fcf7-4a9c-a29d-1049a0c38b77",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.ant-row:nth-child(2) .ant-input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "feedloop.qa@gmail.com"
+    }, {
+      "id": "10af942e-29d8-4909-aa29-38c203e4ad62",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d72c204-bed3-48f2-ae7e-1aa19215fe74",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.ant-input-password > .ant-input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div[2]/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span/span/input", "xpath:position"]
+      ],
+      "value": "QAFeedloop@123"
+    }, {
+      "id": "1a978943-2451-4af4-9c6c-7e08ef3f86de",
+      "comment": "",
+      "command": "click",
+      "target": "css=button[data-qa-id=\"login-button\"]",
+      "targets": [
+        ["css=.ant-btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div[3]/div/div/span/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4171940e-976c-41e0-97d7-dae443fc9a3b",
+      "comment": "",
+      "command": "type",
+      "target": "css=.css-uznfni",
+      "targets": [
+        ["css=.css-uznfni", "css:finder"],
+        ["xpath=//input[@value='12345']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/div/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "36c9a6ae-b093-4e52-92fd-361001c578a0",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h3[data-qa-id=\"text--welcome\"]",
+      "targets": [],
+      "value": "Welcome back to CXP, QA Feedloop!"
+    }, {
+      "id": "d9b1b261-279e-497d-b4e0-b5a9467f2fd2",
       "comment": "",
       "command": "close",
       "target": "",
@@ -25,6 +102,6 @@
     }]
   }],
   "suites": [],
-  "urls": ["https://platform-staging.feedloop.ai/"],
+  "urls": ["https://platform-staging.feedloop.ai/", "https://aixp-dashboard-aks.digitallab.id/"],
   "plugins": []
 }
