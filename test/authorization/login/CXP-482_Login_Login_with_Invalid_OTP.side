@@ -78,20 +78,15 @@
       "comment": "",
       "command": "type",
       "target": "css=.css-uznfni",
-      "targets": [
-        ["css=.css-uznfni", "css:finder"],
-        ["xpath=//input[@value='12345']", "xpath:attributes"],
-        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/div/div[3]/div/div/input", "xpath:idRelative"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": "123456"
+      "targets": [],
+      "value": "654321"
     }, {
       "id": "36c9a6ae-b093-4e52-92fd-361001c578a0",
       "comment": "",
       "command": "verifyText",
-      "target": "css=h3[data-qa-id=\"text--welcome\"]",
+      "target": "css=span[data-qa-id=\"text-error\"]",
       "targets": [],
-      "value": "Welcome back to CXP, QA Feedloop!"
+      "value": "OTP does not match"
     }, {
       "id": "d9b1b261-279e-497d-b4e0-b5a9467f2fd2",
       "comment": "",
