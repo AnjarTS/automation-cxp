@@ -21,20 +21,14 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "36ecfebe-7d39-4d3e-a8d7-f9e94738ea8f",
+      "id": "db1a9c3c-608c-4efe-9186-0e17c54bd8ec",
       "comment": "",
       "command": "type",
       "target": "name=email",
-      "targets": [
-        ["name=email", "name"],
-        ["css=.ant-row:nth-child(2) .ant-input", "css:finder"],
-        ["xpath=//input[@name='email']", "xpath:attributes"],
-        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div/div/div/span/span/input", "xpath:idRelative"],
-        ["xpath=//input", "xpath:position"]
-      ],
+      "targets": [],
       "value": ""
     }, {
-      "id": "ec92ee17-0c4b-44a8-bc8f-951f7fa6d74c",
+      "id": "f779555d-25a4-4cc8-9a8e-e91dfef72a29",
       "comment": "",
       "command": "type",
       "target": "name=email",
@@ -45,22 +39,16 @@
         ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div/div/div/span/span/input", "xpath:idRelative"],
         ["xpath=//input", "xpath:position"]
       ],
-      "value": "invalid@mailuser.com"
+      "value": "invalid"
     }, {
-      "id": "f202080c-3a84-43b7-a9de-cfffbc2344d1",
+      "id": "d3539588-1f4f-43cb-9232-8fc133211415",
       "comment": "",
       "command": "type",
       "target": "name=password",
-      "targets": [
-        ["name=password", "name"],
-        ["css=.ant-input-password > .ant-input", "css:finder"],
-        ["xpath=//input[@name='password']", "xpath:attributes"],
-        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div[2]/div/div/span/span/input", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div/span/span/input", "xpath:position"]
-      ],
+      "targets": [],
       "value": ""
     }, {
-      "id": "010db6ac-a18d-419c-bcde-f034cb5a6843",
+      "id": "e86bbd7d-5e48-4f8b-9542-9ec8513e55db",
       "comment": "",
       "command": "type",
       "target": "name=password",
@@ -73,7 +61,7 @@
       ],
       "value": "QAFeedloop@123"
     }, {
-      "id": "dd0c020c-16f9-4903-99ef-19abb0e31f76",
+      "id": "1dfb5166-a2b0-4e40-9597-02c2e506a6d3",
       "comment": "",
       "command": "click",
       "target": "css=button[data-qa-id=\"login-button\"]",
@@ -84,6 +72,20 @@
         ["xpath=//button", "xpath:position"],
         ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
       ],
+      "value": ""
+    }, {
+      "id": "fd3aae75-cffd-46ce-8873-46252a1bc7f9",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//*[contains(text(), \"Incorrect email-password combination\")]",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "d67c84a6-e954-4804-8225-e9e8eeda2282",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//*[contains(text(), \"Incorrect email-password combination\")]",
+      "targets": [],
       "value": ""
     }, {
       "id": "3f73cc00-ec2f-4ef4-9e2a-7d05d60f743a",
