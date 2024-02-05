@@ -1,0 +1,30 @@
+{
+  "version": "2.0",
+  "name": "Qore-Output-Apps-Automation-Test",
+  "url": "https://atakni-apps.qore.one",
+  "tests": [{
+    "name": "[System - Login] [Role - User] Verify Login User Role",
+    "commands": [{
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [],
+  "urls": ["https://atakni-apps.qore.one"],
+  "plugins": []
+}
