@@ -1,22 +1,121 @@
 {
+  "id": "2ba3a7aa-9e1d-4b4c-a667-4acbb6d5e72a",
   "version": "2.0",
   "name": "Feedloop-AI-Automation-Test",
-  "url": "https://aixp-dashboard-aks.digitallab.id",
+  "url": "https://aixp-dashboard-aks.digitallab.id/",
   "tests": [{
+    "id": "b675af04-92c4-41f4-9574-b79f9ef66183",
     "name": "[Logout] Logout Account",
     "commands": [{
+      "id": "1cc9bea1-f5ef-4d20-86db-be3209ad17b5",
       "comment": "",
       "command": "open",
       "target": "",
       "targets": [],
       "value": ""
     }, {
+      "id": "f3f5561b-acbe-4a92-8963-c6ffec5ca8c8",
       "comment": "",
       "command": "setWindowSize",
       "target": "1366x768",
       "targets": [],
       "value": ""
     }, {
+      "id": "07ed21ea-14fb-48f1-9a21-b93ef938b4fe",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cfb9770c-ef27-4aa8-a95d-1465733136f7",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.ant-row:nth-child(2) .ant-input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "feedloop.qa@gmail.com"
+    }, {
+      "id": "317f9a73-9a93-4492-b8aa-384fb71b2284",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4e5f5b7e-eeec-4a55-93ef-b512803415d0",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.ant-input-password > .ant-input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div[3]/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/span/span/input", "xpath:position"]
+      ],
+      "value": "QAFeedloop@123"
+    }, {
+      "id": "dd834f06-12a3-4e71-b8b2-014e5c58552b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn",
+      "targets": [
+        ["css=.ant-btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div[4]/div/div/span/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe6ac6f5-ff63-4f28-a59b-d47c5629cfcc",
+      "comment": "",
+      "command": "type",
+      "target": "css=.css-uznfni",
+      "targets": [
+        ["css=.css-uznfni", "css:finder"],
+        ["xpath=//input[@value='12345']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/div/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "84dc7271-ea56-45e0-b7ed-cc6869e26cf9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.anticon-fl-chevron-down",
+      "targets": [
+        ["css=.anticon-fl-chevron-down", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div[3]/div[3]/i[2]", "xpath:idRelative"],
+        ["xpath=//i[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae35ceed-ef6e-49b3-97b5-e746c98f8fca",
+      "comment": "",
+      "command": "click",
+      "target": "css=li[data-qa-id=\"logout-button\"]",
+      "targets": [
+        ["css=.ant-dropdown-menu-item", "css:finder"],
+        ["xpath=//div[5]/div/div/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "388f369c-a144-4e34-90ce-442d5f39f0f5",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//*[contains(text(), \"Log in to your account\")]",
+      "targets": [],
+      "value": "xpath=//*[contains(text(), \"Log in to your account\")]"
+    }, {
+      "id": "51cbab04-057d-4b39-945f-4e0dbda5d88c",
       "comment": "",
       "command": "close",
       "target": "",
@@ -25,6 +124,6 @@
     }]
   }],
   "suites": [],
-  "urls": ["https://aixp-dashboard-aks.digitallab.id/"],
+  "urls": ["https://aixp-dashboard-aks.digitallab.id/", "https://aixp.digitallab.id/"],
   "plugins": []
 }
