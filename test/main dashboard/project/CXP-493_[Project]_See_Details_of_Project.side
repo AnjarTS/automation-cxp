@@ -1,22 +1,53 @@
 {
+  "id": "8e4dd345-3dad-4636-877e-88df419ff439",
   "version": "2.0",
   "name": "Feedloop-AI-Automation-Test",
   "url": "https://aixp-dashboard-aks.digitallab.id",
   "tests": [{
+    "id": "f9e416a2-44c5-4603-8739-0113ec3a3320",
     "name": "[Project] See Details of Project",
     "commands": [{
+      "id": "81253dcb-4f91-4f2e-9e2c-77465fcae397",
       "comment": "",
       "command": "open",
       "target": "",
       "targets": [],
       "value": ""
     }, {
+      "id": "1545fffc-545f-4bf0-9c29-886ede648ffa",
       "comment": "",
       "command": "setWindowSize",
       "target": "1366x768",
       "targets": [],
       "value": ""
     }, {
+      "id": "261b0a98-4ddc-4498-a675-b75176627b08",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[ancestor::div[@class=\"ant-card-body\"]//strong[contains(., \"Check Project\")]]",
+      "targets": [
+        ["css=.ant-col:nth-child(4) .ant-btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div[2]/div/div/div/div/div/div/div/div[4]/div/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fec24734-0c0f-4346-a918-52218ecdf399",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//*[contains(text(), \"Check Project\")]",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "67c36e00-c435-4d3e-ae9c-d5da2e0ec7f9",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//*[contains(text(), \"Check Project\")]",
+      "targets": [],
+      "value": "xpath=//*[contains(text(), \"Check Project\")]"
+    }, {
+      "id": "6410c3c5-27d9-4633-93c8-dc412634da64",
       "comment": "",
       "command": "close",
       "target": "",

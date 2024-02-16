@@ -1,22 +1,220 @@
 {
+  "id": "208655f6-2fa9-4d4e-a4d9-9b138dc3d45d",
   "version": "2.0",
   "name": "Feedloop-AI-Automation-Test",
   "url": "https://aixp-dashboard-aks.digitallab.id",
   "tests": [{
+    "id": "9ca7c2ee-5c54-4847-adc9-7367213ec199",
     "name": "[Project] Create New Project",
     "commands": [{
+      "id": "6d5e6caa-54c5-41bd-8e9e-dcd9c9953e98",
       "comment": "",
       "command": "open",
       "target": "",
       "targets": [],
       "value": ""
     }, {
+      "id": "cda049b6-869a-4b5b-a27d-bc06b4f05e3c",
       "comment": "",
       "command": "setWindowSize",
       "target": "1366x768",
       "targets": [],
       "value": ""
     }, {
+      "id": "dc0fea97-9167-4e7a-b674-f6edddb13d89",
+      "comment": "",
+      "command": "//type",
+      "target": "css=input[data-qa-id=\"email-field\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72dc6dd0-da61-4403-80f1-3994404fea5b",
+      "comment": "",
+      "command": "//type",
+      "target": "css=input[data-qa-id=\"email-field\"]",
+      "targets": [],
+      "value": "feedloop.qa@gmail.com"
+    }, {
+      "id": "8833d380-18df-4ed0-a3a6-c87af04524d9",
+      "comment": "",
+      "command": "//type",
+      "target": "css=input[data-qa-id=\"password-field\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8161eb7c-fefc-4115-ae11-26f96bf67a69",
+      "comment": "",
+      "command": "//type",
+      "target": "css=input[data-qa-id=\"password-field\"]",
+      "targets": [],
+      "value": "QAFeedloop@123"
+    }, {
+      "id": "917e5978-4976-4ae7-a042-73871fc178c5",
+      "comment": "",
+      "command": "//click",
+      "target": "css=button[data-qa-id=\"login-button\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "470bfbcc-5145-4571-a0de-ceca58bb3b85",
+      "comment": "",
+      "command": "//click",
+      "target": "css=input[data-qa-id=\"input-pin\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a81a9d3e-a1d4-441a-8323-98cbd175daf0",
+      "comment": "",
+      "command": "//type",
+      "target": "css=input[data-qa-id=\"input-pin\"]",
+      "targets": [],
+      "value": "123456"
+    }, {
+      "id": "490bc406-471a-4e79-9daa-18294dd3bd3c",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg",
+      "targets": [
+        ["css=svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "591f989a-13a6-4d95-9e46-94fef6b0f8dd",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=input[data-qa-id=\"input--project-name\"]",
+      "targets": [],
+      "value": "Enter your project name"
+    }, {
+      "id": "42ab7d36-aaa9-4d11-8f89-744dbb8b9ed7",
+      "comment": "",
+      "command": "click",
+      "target": "css=input[data-qa-id=\"input--project-name\"]",
+      "targets": [
+        ["css=.ant-input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4510c42b-27e1-4d0d-9c00-8487f0521295",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"input--project-name\"]",
+      "targets": [
+        ["css=.ant-input", "css:finder"],
+        ["xpath=//input[@value='Check Project']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Check Project"
+    }, {
+      "id": "5dbbc4ff-8aab-430a-b010-435c81169896",
+      "comment": "",
+      "command": "click",
+      "target": "css=input[data-qa-id=\"checkbox--accept\"]",
+      "targets": [
+        ["css=.ant-checkbox-input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div[2]/div/div/div/label/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8648957-0fd6-4815-964d-dfb45e29abb4",
+      "comment": "",
+      "command": "click",
+      "target": "css=button[data-qa-id=\"button--continue\"]",
+      "targets": [
+        ["css=.ant-btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div[2]/div/div/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "94117c04-0faa-4b7a-9592-9d35a8b8c062",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@data-qa-id=\"button--industry\" and descendant::span[contains(text(), \"Retail\")]]",
+      "targets": [
+        ["css=.css-787k7j:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div[2]/div/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Retail')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7876a29a-48ec-4a71-b8fe-a43e161b2636",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@data-qa-id=\"button--industry\" and descendant::span[contains(text(), \"Finance\")]]",
+      "targets": [
+        ["css=.css-787k7j:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div[2]/div/div/div/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Finance')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "264a0726-7504-4ca3-adfd-821fd4a9e7f6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@data-qa-id=\"button--industry\" and descendant::span[contains(text(), \"E-commerce\")]]",
+      "targets": [
+        ["css=.ant-btn:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div[2]/div/div/div/div[3]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'E-commerce')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "27bc469a-e4b5-4db7-b2f6-b21b3ee1ead1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@data-qa-id=\"button--industry\" and descendant::span[contains(text(), \"Telecommunication\")]]",
+      "targets": [
+        ["css=.ant-btn:nth-child(4)", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div[2]/div/div/div/div[3]/button[4]", "xpath:idRelative"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,'Telecommunication')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d04d6aed-f845-4e55-9759-b6f418a716c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=button[data-qa-id=\"button--continue\"]",
+      "targets": [
+        ["css=.ant-btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div[2]/div/div/div/div[4]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3760708-9b75-4d51-8a0e-20f11a1e7b43",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//*[contains(text(), \"Check Project\")]",
+      "targets": [],
+      "value": "xpath=//*[contains(text(), \"Check Project\")]"
+    }, {
+      "id": "3a7f5fb5-6856-4a79-9c48-954e7145e3dd",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//*[contains(text(), \"Check Project\")]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "7761a66a-d86b-4bdd-89f1-1b17277ee896",
       "comment": "",
       "command": "close",
       "target": "",
