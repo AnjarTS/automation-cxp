@@ -24,14 +24,14 @@
       "id": "361a89d1-9767-499a-adbe-216bedc27a89",
       "comment": "",
       "command": "type",
-      "target": "name=email",
+      "target": "css=input[data-qa-id=\"email-field\"]",
       "targets": [],
       "value": ""
     }, {
       "id": "8fa1755f-7bff-482c-b85a-83758ebf02b4",
       "comment": "",
       "command": "type",
-      "target": "name=email",
+      "target": "css=input[data-qa-id=\"email-field\"]",
       "targets": [
         ["name=email", "name"],
         ["css=.ant-row:nth-child(2) .ant-input", "css:finder"],
@@ -44,14 +44,14 @@
       "id": "ed00c907-c1ec-45d9-9884-7ce12dbd1f98",
       "comment": "",
       "command": "type",
-      "target": "name=password",
+      "target": "css=input[data-qa-id=\"password-field\"]",
       "targets": [],
       "value": ""
     }, {
       "id": "af0a5eab-98ad-4b9f-a423-c204b738b192",
       "comment": "",
       "command": "type",
-      "target": "name=password",
+      "target": "css=input[data-qa-id=\"password-field\"]",
       "targets": [
         ["name=password", "name"],
         ["css=.ant-input-password > .ant-input", "css:finder"],
@@ -64,7 +64,7 @@
       "id": "872ae2a8-3800-4dcd-90b9-dc1c8be152cf",
       "comment": "",
       "command": "click",
-      "target": "css=.ant-btn",
+      "target": "css=button[data-qa-id=\"login-button\"]",
       "targets": [
         ["css=.ant-btn", "css:finder"],
         ["xpath=//button[@type='button']", "xpath:attributes"],
@@ -74,22 +74,10 @@
       ],
       "value": ""
     }, {
-      "id": "ffeaf4f8-a594-4150-8c48-39087b2ad8ac",
-      "comment": "",
-      "command": "click",
-      "target": "css=.css-uznfni",
-      "targets": [
-        ["css=.css-uznfni", "css:finder"],
-        ["xpath=//input[@value='']", "xpath:attributes"],
-        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/div/div[3]/div/div/input", "xpath:idRelative"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
       "id": "c9d8a764-10da-49d4-97fd-6aacd7a341ce",
       "comment": "",
       "command": "type",
-      "target": "css=.css-uznfni",
+      "target": "css=input[data-qa-id=\"input-pin\"]",
       "targets": [
         ["css=.css-uznfni", "css:finder"],
         ["xpath=//input[@value='12345']", "xpath:attributes"],

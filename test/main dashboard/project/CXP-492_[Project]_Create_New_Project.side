@@ -21,53 +21,57 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "dc0fea97-9167-4e7a-b674-f6edddb13d89",
+      "id": "3c74e7c8-adaa-4180-853f-5d10bc645529",
       "comment": "",
-      "command": "//type",
+      "command": "type",
       "target": "css=input[data-qa-id=\"email-field\"]",
       "targets": [],
       "value": ""
     }, {
-      "id": "72dc6dd0-da61-4403-80f1-3994404fea5b",
+      "id": "b53f109c-b8ed-40c0-8cd0-49b59996a8a7",
       "comment": "",
-      "command": "//type",
+      "command": "type",
       "target": "css=input[data-qa-id=\"email-field\"]",
       "targets": [],
       "value": "feedloop.qa@gmail.com"
     }, {
-      "id": "8833d380-18df-4ed0-a3a6-c87af04524d9",
+      "id": "c79879e1-f050-45ba-afef-fdd8823d1e8b",
       "comment": "",
-      "command": "//type",
+      "command": "type",
       "target": "css=input[data-qa-id=\"password-field\"]",
       "targets": [],
       "value": ""
     }, {
-      "id": "8161eb7c-fefc-4115-ae11-26f96bf67a69",
+      "id": "6c32a9f1-d291-458a-92f4-a0180a765d32",
       "comment": "",
-      "command": "//type",
+      "command": "type",
       "target": "css=input[data-qa-id=\"password-field\"]",
       "targets": [],
       "value": "QAFeedloop@123"
     }, {
-      "id": "917e5978-4976-4ae7-a042-73871fc178c5",
+      "id": "961b8251-56ac-4086-a654-62f91f518920",
       "comment": "",
-      "command": "//click",
+      "command": "click",
       "target": "css=button[data-qa-id=\"login-button\"]",
-      "targets": [],
+      "targets": [
+        ["css=.ant-btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div[3]/div/div/span/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
       "value": ""
     }, {
-      "id": "470bfbcc-5145-4571-a0de-ceca58bb3b85",
+      "id": "8fa9d1fc-ef32-4d4e-9dc4-5ba4fb8e574d",
       "comment": "",
-      "command": "//click",
+      "command": "type",
       "target": "css=input[data-qa-id=\"input-pin\"]",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "a81a9d3e-a1d4-441a-8323-98cbd175daf0",
-      "comment": "",
-      "command": "//type",
-      "target": "css=input[data-qa-id=\"input-pin\"]",
-      "targets": [],
+      "targets": [
+        ["css=.css-uznfni", "css:finder"],
+        ["xpath=//input[@value='12345']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/div/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
       "value": "123456"
     }, {
       "id": "490bc406-471a-4e79-9daa-18294dd3bd3c",

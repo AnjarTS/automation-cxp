@@ -21,6 +21,53 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "a884b13a-1c77-4713-bf00-b6357e36c1fc",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"email-field\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3a5833e-6a35-437e-9978-edacb0a4a947",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"email-field\"]",
+      "targets": [],
+      "value": "feedloop.qa@gmail.com"
+    }, {
+      "id": "9b7b0f35-7aa7-4349-ba32-7c7b49bde46a",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"password-field\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f28e7f39-d267-4a0c-a039-10600a8ff797",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"password-field\"]",
+      "targets": [],
+      "value": "QAFeedloop@123"
+    }, {
+      "id": "55581d85-c361-4998-803e-5dcd50305b4d",
+      "comment": "",
+      "command": "click",
+      "target": "css=button[data-qa-id=\"login-button\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea4e3eea-ee46-4e76-a163-4bf05fd1b807",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"input-pin\"]",
+      "targets": [
+        ["css=.css-uznfni", "css:finder"],
+        ["xpath=//input[@value='12345']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/div/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
       "id": "261b0a98-4ddc-4498-a675-b75176627b08",
       "comment": "",
       "command": "click",
