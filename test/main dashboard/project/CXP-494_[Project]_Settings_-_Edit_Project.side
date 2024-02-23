@@ -1,22 +1,165 @@
 {
+  "id": "72fb0ed3-2997-41e1-ada2-15adaf4d7b31",
   "version": "2.0",
   "name": "Feedloop-AI-Automation-Test",
   "url": "https://aixp-dashboard-aks.digitallab.id",
   "tests": [{
+    "id": "0ede9e32-22cb-4601-940b-db2a9d6696e5",
     "name": "[Project] Settings - Edit Project",
     "commands": [{
+      "id": "8bc027f4-f569-42b5-ad9d-9d2968bf54cc",
       "comment": "",
       "command": "open",
       "target": "",
       "targets": [],
       "value": ""
     }, {
+      "id": "417c8d2d-519d-4480-9c95-9088719eb77e",
       "comment": "",
       "command": "setWindowSize",
       "target": "1366x768",
       "targets": [],
       "value": ""
     }, {
+      "id": "371ac14d-188b-4e4f-afe2-9de3ebb74281",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"email-field\"]",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.ant-row:nth-child(2) .ant-input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c744c750-ece5-489a-997f-dcd3f14cf82c",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"email-field\"]",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.ant-row:nth-child(2) .ant-input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "feedloop.qa@gmail.com"
+    }, {
+      "id": "c88950ad-4ba1-481f-a2a5-978216bf4f92",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"password-field\"]",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.ant-input-password > .ant-input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div[2]/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "506b171c-5ffe-4b62-8a34-70b820597110",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"password-field\"]",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.ant-input-password > .ant-input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div[2]/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span/span/input", "xpath:position"]
+      ],
+      "value": "QAFeedloop@123"
+    }, {
+      "id": "4075956e-dbf1-4375-8542-7b3db71da83d",
+      "comment": "",
+      "command": "click",
+      "target": "css=button[data-qa-id=\"login-button\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a85c9cdd-6f62-4511-bc67-2421c59d47dd",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"input-pin\"]",
+      "targets": [],
+      "value": "123456"
+    }, {
+      "id": "3bd5441a-11a7-4f20-a0a3-3777556b8d49",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//i[ancestor::div[@class=\"ant-card-body\"]//strong[contains(., \"Check Project\")]]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb8c698b-e8b1-47de-b1b3-4b7bc762686d",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "//li[@data-qa-id=\"button--project-context--settings\"]",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "15ea0a37-4b2c-4571-92bb-9ecc3384a8aa",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li[@data-qa-id=\"button--project-context--settings\"]/div/i",
+      "targets": [
+        ["css=.ant-col:nth-child(2) .anticon", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff95ae34-3837-4b99-a54b-4cbca79d9fed",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=input[data-qa-id=\"input--rename-project\"]",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "4cb9185e-7cb2-4dfd-a5ca-08ba7997f8fa",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"input--rename-project\"]",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.css-17xkyhv", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/section/section/main/div/div[3]/div/div[2]/div/div/div[3]/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Project Check"
+    }, {
+      "id": "6c88799e-7cb3-4301-85f8-6a8c6d6e4fd8",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//span[contains(text(),\"Save Changes\")]/ancestor::button",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "9ef9162f-a8b5-47d4-8438-ed6eb789c82c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(text(),\"Save Changes\")]/ancestor::button",
+      "targets": [
+        ["css=.ant-btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/section/section/main/div/div[3]/div/div[2]/div/div/div[3]/div/div[2]/div/div[5]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save Changes')]", "xpath:innerText"]
+      ],
+      "value": "Save Changes"
+    }, {
+      "id": "1eaf6b1b-5fcf-4b20-b75b-9b01ea058cba",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//span[contains(text(),\"Succesfully saved your project\")]",
+      "targets": [],
+      "value": "Succesfully saved your project"
+    }, {
+      "id": "517b3a0d-156a-453b-bb0f-99575c0fecc8",
       "comment": "",
       "command": "close",
       "target": "",

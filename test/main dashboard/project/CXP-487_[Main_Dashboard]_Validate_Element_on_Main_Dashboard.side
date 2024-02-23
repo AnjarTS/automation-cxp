@@ -1,22 +1,145 @@
 {
+  "id": "5366927c-1fec-4ef4-b4b9-832b27623cf6",
   "version": "2.0",
   "name": "Feedloop-AI-Automation-Test",
   "url": "https://aixp-dashboard-aks.digitallab.id",
   "tests": [{
+    "id": "ebbf126b-b385-4d4f-9590-efed7741d07e",
     "name": "[Main Dashboard] Validate Element on Main Dashboard",
     "commands": [{
+      "id": "61ed0bcf-5a67-44af-98b8-0ef5ec247579",
       "comment": "",
       "command": "open",
       "target": "",
       "targets": [],
       "value": ""
     }, {
+      "id": "19b03fb6-a220-41ad-b457-672238194221",
       "comment": "",
       "command": "setWindowSize",
       "target": "1366x768",
       "targets": [],
       "value": ""
     }, {
+      "id": "361a89d1-9767-499a-adbe-216bedc27a89",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"email-field\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8fa1755f-7bff-482c-b85a-83758ebf02b4",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"email-field\"]",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.ant-row:nth-child(2) .ant-input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "feedloop.qa@gmail.com"
+    }, {
+      "id": "ed00c907-c1ec-45d9-9884-7ce12dbd1f98",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"password-field\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af0a5eab-98ad-4b9f-a423-c204b738b192",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"password-field\"]",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.ant-input-password > .ant-input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div[2]/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span/span/input", "xpath:position"]
+      ],
+      "value": "QAFeedloop@123"
+    }, {
+      "id": "872ae2a8-3800-4dcd-90b9-dc1c8be152cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=button[data-qa-id=\"login-button\"]",
+      "targets": [
+        ["css=.ant-btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div[3]/div/div/span/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9d8a764-10da-49d4-97fd-6aacd7a341ce",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"input-pin\"]",
+      "targets": [
+        ["css=.css-uznfni", "css:finder"],
+        ["xpath=//input[@value='12345']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/div/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "f6e1c218-bf3a-4cf7-951c-8be24ba78d3b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[ancestor::div[@class=\"ant-card-body\"]//strong[contains(., \"demo\")]]",
+      "targets": [
+        ["css=.ant-col:nth-child(2) .ant-btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Go to this project')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "47346760-dc17-45a6-9812-a742e02efea4",
+      "comment": "",
+      "command": "click",
+      "target": "css=li[data-qa-id=\"item--parent--project-overview\"]",
+      "targets": [
+        ["css=.ant-menu-item-active > a", "css:finder"],
+        ["xpath=//div[@id='__next']/section/aside/div/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/projects/97e3271b-8500-4a53-ab21-ac3894ddcd11')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a942d5b9-f578-41f0-954b-fd67b5851949",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//*[contains(text(), \"demo\")]",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "c880e4fb-5964-4ab5-9d0e-b209c6b99ebb",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//*[contains(text(), \"demo\")]",
+      "targets": [],
+      "value": "xpath=//*[contains(text(), \"demo\")]"
+    }, {
+      "id": "f7870622-04c3-4920-a30e-e175a508ad58",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//*[contains(text(), \"Project Overview\")]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9b8d07f-a341-4927-8a85-bdaf964cc272",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//*[contains(text(), \"Documentation\")]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "639bfe5d-0df9-43eb-9f73-0d62e8646563",
       "comment": "",
       "command": "close",
       "target": "",
