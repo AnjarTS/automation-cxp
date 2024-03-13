@@ -1,0 +1,30 @@
+{
+  "version": "2.0",
+  "name": "Feedloop-AI-Automation-Test",
+  "url": "https://aixp-dashboard-aks.digitallab.id",
+  "tests": [{
+    "name": "[People] Edit Access - Add Project",
+    "commands": [{
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [],
+  "urls": ["https://aixp-dashboard-aks.digitallab.id/"],
+  "plugins": []
+}
