@@ -1,22 +1,148 @@
 {
+  "id": "33f1956e-9bf7-4a31-9ce1-e3fe42da8368",
   "version": "2.0",
   "name": "Feedloop-AI-Automation-Test",
   "url": "https://aixp-dashboard-aks.digitallab.id",
   "tests": [{
+    "id": "774a2008-fd86-4654-bf8b-2300d44a3b85",
     "name": "[Project] View Documentation",
     "commands": [{
+      "id": "bdb1cde5-2050-40d6-8e66-36291d2fb56a",
       "comment": "",
       "command": "open",
       "target": "",
       "targets": [],
       "value": ""
     }, {
+      "id": "e3ef717b-4cd0-4605-a6c9-457496ab81cb",
       "comment": "",
       "command": "setWindowSize",
       "target": "1366x768",
       "targets": [],
       "value": ""
     }, {
+      "id": "73c0bef0-4861-419b-a958-6334e0200831",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"email-field\"]",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.ant-row:nth-child(2) .ant-input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3733526-5de8-4fb4-93db-cf7065643f61",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"email-field\"]",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.ant-row:nth-child(2) .ant-input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "feedloop.qa@gmail.com"
+    }, {
+      "id": "21536abd-7e3d-4d66-93c7-5219af07ee96",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"password-field\"]",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.ant-input-password > .ant-input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div[2]/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a645e60-c87a-437a-9810-a9d3239ff43f",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"password-field\"]",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.ant-input-password > .ant-input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div[2]/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span/span/input", "xpath:position"]
+      ],
+      "value": "QAFeedloop@123"
+    }, {
+      "id": "b4b33f0e-f8fa-4a55-a14e-602d18f66a35",
+      "comment": "",
+      "command": "click",
+      "target": "css=button[data-qa-id=\"login-button\"]",
+      "targets": [
+        ["css=.ant-btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div[3]/div/div/span/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf0c212a-cebc-40d2-bbb1-3e056e89a97d",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"input-pin\"]",
+      "targets": [
+        ["css=.css-uznfni", "css:finder"],
+        ["xpath=//input[@value='12345']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/div/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "261b0a98-4ddc-4498-a675-b75176627b08",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[ancestor::div[@class=\"ant-card-body\"]//strong[contains(., \"Check Project\")]]",
+      "targets": [
+        ["css=.ant-col:nth-child(4) .ant-btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div[2]/div/div/div/div/div/div/div/div[4]/div/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db0c3a15-0490-4b77-8d8d-0fcac15a19a4",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//a[contains(text(),\"Documentation\")]",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "210114fd-0307-498c-acef-971af1311430",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),\"Documentation\")]",
+      "targets": [
+        ["linkText=Documentation", "linkText"],
+        ["css=a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Documentation')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/section/section/header/div/div[3]/span[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://feedloop_io.gitlab.io/aixp-docs')]", "xpath:href"],
+        ["xpath=//span[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Documentation')]", "xpath:innerText"]
+      ],
+      "value": "Documentation",
+      "opensWindow": true,
+      "windowHandleName": "win7582",
+      "windowTimeout": 2000
+    }, {
+      "id": "af7d4acb-1046-4783-a26f-af264cffdb9f",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "7d35281a-7bd1-4b5e-a2e5-2749d386f12c",
       "comment": "",
       "command": "close",
       "target": "",

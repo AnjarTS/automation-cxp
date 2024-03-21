@@ -1,22 +1,156 @@
 {
+  "id": "1df99e2f-197d-4f3f-995d-ba2c061a6230",
   "version": "2.0",
   "name": "Feedloop-AI-Automation-Test",
   "url": "https://aixp-dashboard-aks.digitallab.id",
   "tests": [{
+    "id": "5b301f59-d7cd-4936-8098-95fe56151465",
     "name": "[People] Search People",
     "commands": [{
+      "id": "75779c12-abc5-4c3a-8ac7-af3ea038f083",
       "comment": "",
       "command": "open",
       "target": "",
       "targets": [],
       "value": ""
     }, {
+      "id": "91f06463-70df-430b-944a-041ce7f052c7",
       "comment": "",
       "command": "setWindowSize",
       "target": "1366x768",
       "targets": [],
       "value": ""
     }, {
+      "id": "e7b3d5ff-bf42-450e-b4ea-756bf63e0438",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"email-field\"]",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.ant-row:nth-child(2) .ant-input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4cd8b6f-19a5-4341-b862-5185cb25c50a",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"email-field\"]",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.ant-row:nth-child(2) .ant-input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "feedloop.qa@gmail.com"
+    }, {
+      "id": "c67decb8-b88c-41fc-aeea-65579c21ee74",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"password-field\"]",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.ant-input-password > .ant-input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div[2]/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c53a7df1-45c0-4d69-b940-aa7f850cb736",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"password-field\"]",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.ant-input-password > .ant-input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div[2]/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span/span/input", "xpath:position"]
+      ],
+      "value": "QAFeedloop@123"
+    }, {
+      "id": "caa207f2-fb3d-4216-b894-d22238303325",
+      "comment": "",
+      "command": "click",
+      "target": "css=button[data-qa-id=\"login-button\"]",
+      "targets": [
+        ["css=.ant-btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div[3]/div/div/span/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8032d4c-ea41-4239-ac62-aa0cd343e026",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"input-pin\"]",
+      "targets": [
+        ["css=.css-uznfni", "css:finder"],
+        ["xpath=//input[@value='12345']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/div/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "cd23c71b-66b8-4bec-a4c8-13679ea806b9",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//li[@data-qa-id=\"tab--people\"]",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "7166b32b-bc43-4ab4-996a-7ce7de17fe16",
+      "comment": "",
+      "command": "open",
+      "target": "https://aixp-dashboard-aks.digitallab.id/people",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5628149-cf69-4e0c-b599-b60a5638a72d",
+      "comment": "",
+      "command": "//click",
+      "target": "xpath=//li[@data-qa-id=\"tab--people\"]",
+      "targets": [],
+      "value": "xpath=//li[@data-qa-id=\"tab--people\"]"
+    }, {
+      "id": "d63ed79a-6a9b-46bc-9a74-8e8214b4b219",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"input--search\"]",
+      "targets": [
+        ["css=.ant-input", "css:finder"],
+        ["xpath=//input[@value='yovi']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "QA Feedloop"
+    }, {
+      "id": "fe1973aa-3fb1-4546-a74f-920c93a4ca81",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=input[data-qa-id=\"input--search\"]",
+      "targets": [
+        ["css=.ant-input", "css:finder"],
+        ["xpath=//input[@value='yovi']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "79c1d039-5652-4a97-bcc1-7d567cb5e855",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//*[contains(text(), \"QA Feedloop\")]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e789d1d6-c54a-482a-8aa0-37bd7f033ebe",
       "comment": "",
       "command": "close",
       "target": "",
