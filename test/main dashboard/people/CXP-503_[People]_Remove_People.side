@@ -1,22 +1,190 @@
 {
+  "id": "1df99e2f-197d-4f3f-995d-ba2c061a6230",
   "version": "2.0",
   "name": "Feedloop-AI-Automation-Test",
   "url": "https://aixp-dashboard-aks.digitallab.id",
   "tests": [{
+    "id": "5b301f59-d7cd-4936-8098-95fe56151465",
     "name": "[People] Remove People",
     "commands": [{
+      "id": "75779c12-abc5-4c3a-8ac7-af3ea038f083",
       "comment": "",
       "command": "open",
-      "target": "",
+      "target": "/",
       "targets": [],
       "value": ""
     }, {
+      "id": "91f06463-70df-430b-944a-041ce7f052c7",
       "comment": "",
       "command": "setWindowSize",
       "target": "1366x768",
       "targets": [],
       "value": ""
     }, {
+      "id": "e7b3d5ff-bf42-450e-b4ea-756bf63e0438",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"email-field\"]",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.ant-row:nth-child(2) .ant-input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4cd8b6f-19a5-4341-b862-5185cb25c50a",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"email-field\"]",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.ant-row:nth-child(2) .ant-input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "feedloop.qa@gmail.com"
+    }, {
+      "id": "c67decb8-b88c-41fc-aeea-65579c21ee74",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"password-field\"]",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.ant-input-password > .ant-input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div[2]/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c53a7df1-45c0-4d69-b940-aa7f850cb736",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"password-field\"]",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.ant-input-password > .ant-input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div[2]/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span/span/input", "xpath:position"]
+      ],
+      "value": "QAFeedloop@123"
+    }, {
+      "id": "caa207f2-fb3d-4216-b894-d22238303325",
+      "comment": "",
+      "command": "click",
+      "target": "css=button[data-qa-id=\"login-button\"]",
+      "targets": [
+        ["css=.ant-btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/form/div[3]/div/div/span/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8032d4c-ea41-4239-ac62-aa0cd343e026",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"input-pin\"]",
+      "targets": [
+        ["css=.css-uznfni", "css:finder"],
+        ["xpath=//input[@value='12345']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div[3]/div/div/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "cd23c71b-66b8-4bec-a4c8-13679ea806b9",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//li[@data-qa-id=\"tab--people\"]",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "7166b32b-bc43-4ab4-996a-7ce7de17fe16",
+      "comment": "",
+      "command": "open",
+      "target": "https://aixp-dashboard-aks.digitallab.id/people",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5628149-cf69-4e0c-b599-b60a5638a72d",
+      "comment": "",
+      "command": "//click",
+      "target": "xpath=//li[@data-qa-id=\"tab--people\"]",
+      "targets": [],
+      "value": "xpath=//li[@data-qa-id=\"tab--people\"]"
+    }, {
+      "id": "9368b567-e673-4c49-a1b5-6588ef413a95",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[data-qa-id=\"input--search\"]",
+      "targets": [],
+      "value": "feedloopai@gmail.com"
+    }, {
+      "id": "98ac6a7a-420f-48cd-88ff-1aa51620b4e9",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=input[data-qa-id=\"input--search\"]",
+      "targets": [
+        ["css=.ant-input", "css:finder"],
+        ["xpath=//input[@value='feedloop']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/div/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "456552af-d9ae-4225-9aa7-d7c4eac87cc3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.anticon-fl-more-horizontal",
+      "targets": [
+        ["css=.anticon-fl-more-horizontal", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div/div/div/div/div[2]/div/div/div/div/div/table/tbody/tr/td[3]/i", "xpath:idRelative"],
+        ["xpath=//td[3]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "365651d2-2af7-4a90-b6a6-cfdad336c3ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=i[data-qa-id=\"dropdown--action-feedloopai@gmail.com\"]",
+      "targets": [
+        ["css=.ant-dropdown-menu-item-active", "css:finder"],
+        ["xpath=//div[5]/div/div/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Edit access')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3615a2db-807c-4bfb-848a-d688a6acb351",
+      "comment": "",
+      "command": "click",
+      "target": "css=li[data-qa-id=\"action--delete-feedloopai@gmail.com\"]",
+      "targets": [
+        ["css=.ant-btn-link", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add project')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c0fcb67-ef77-4135-8f3e-3f9618817df3",
+      "comment": "",
+      "command": "click",
+      "target": "css=button[data-qa-id=\"button--delete\"]",
+      "targets": [
+        ["css=.ant-select-dropdown-menu-item-active", "css:finder"],
+        ["xpath=//div[@id='d53c7202-96d9-4be4-a415-b5fef5e1b5a3']/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/div/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'admin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c3f756d-4bc8-46bd-ac89-b0f5f07a3601",
       "comment": "",
       "command": "close",
       "target": "",
